@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Alethia Next';
+    src: url('../fonts/AlethiaNext-Light.eot');
+    src: local('Alethia Next Light'), local('AlethiaNext-Light'),
+        url('../fonts/AlethiaNext-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AlethiaNext-Light.woff2') format('woff2'),
+        url('../fonts/AlethiaNext-Light.woff') format('woff'),
+        url('../fonts/AlethiaNext-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+// файл обнуляющих стилей
+@import "nullstyle.scss";
