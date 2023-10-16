@@ -20,7 +20,10 @@
     <div class="main">
       <div class="main__background-wrapper">
         <picture>
-          <img src="./img/main/main.png" alt="background" class="background">
+          <source srcset="./img/main/main-mobile.png" media="(max-width: 375px)" class="main-background-mobile"/>
+          <source srcset="./img/main/main-medium.png" media="(max-width: 768px)" class="main-background-medium"/>
+          <source srcset="./img/main/main-large.png" media="(max-width: 992px)" class="main-background-large"/>
+          <img src="./img/main/main.png" alt="background" class="main-background">
         </picture>
       </div>
       <div class="main-left">
@@ -33,6 +36,21 @@
           <img src="./img/header/youtube.svg" alt="youtube" class="main-left__icons-icon">
         </div>
       </div>
+
+      <div class="main-burger-wrapper">
+        <div class="main-burger">
+          <span class="main-burger-span-top"></span>
+          <span class="main-burger-span-middle"></span>
+          <span class="main-burger-span-bottom"></span>
+        </div>
+        <div class="main-number">
+          <a href="#">
+            <h3>+38 (095) 650-71-79</h3>
+          </a>
+            <hr class="main-header__number-hr" color="#D1A954" />
+        </div>
+      </div>
+
       <div class="container">
         <div class="main-header">
           <div class="main-header__menu">
@@ -55,23 +73,27 @@
           <div class="main-header__number">
             <a href="#">
               <h3>+38 (095) 650-71-79</h3>
-              <hr class="main-header__number-hr" color="#D1A954" />
             </a>
+              <hr class="main-header__number-hr" color="#D1A954" />
+           
           </div>
         </div>
         <div class="main-content">
           <div class="main-content-left">
             <h1>театр ім. Лесі Українки</h1>
-            <h2>У самому центрі історичної частини Києва, за два кроки від Хрещатика, неподалік від Золотих воріт, на
-              розі
-              двох старовинних вулиць - Пушкінської та Богдана Хмельницького – постає будівля, добре відома киянам та
-              гостям столиці України як Театр імені Лесі Українки. <p><br>Цінність будь-якого театру, його популярність
+            <div class="main-content-left__info">
+              <p>У самому центрі історичної частини Києва, за два кроки від Хрещатика, неподалік від Золотих воріт, на
+                розі
+                двох старовинних вулиць - Пушкінської та Богдана Хмельницького – постає будівля, добре відома киянам та
+                гостям столиці України як Театр імені Лесі Українки.</p>
+              <p>Цінність будь-якого театру, його популярність
                 у глядача
                 завжди визначається наявністю в ньому яскравих індивідуальностей.</p>
-              <p><br>Київський театр імені Лесі Українки завжди
+              <p>Київський театр імені Лесі Українки завжди
                 славився своїми акторськими та режисерськими індивідуальностями. Театр завжди був і залишається театром
                 ансамблю.</p>
-            </h2>
+              </h2>
+            </div>
             <div class="main-content-left__button">
               <a href="#">
                 <button class="main-content-left__button-wrapper">
