@@ -505,7 +505,14 @@ body{
         }
     }
 }
-
+@media (max-width: 650px) {
+    .main-burger-wrapper{
+        .main-burger-menu{
+            width: 50%;
+        }
+    }
+    
+}
 @media (max-width: 576px) {
     .main-background{
         height: 600px;
@@ -529,10 +536,24 @@ body{
             }
         }
     }
+    .main-burger-wrapper{
+        .main-burger-menu{
+            width: 70%;
+        }
+    }
+    
 }
 
 @media (max-width: 472px) {
     .main-background{
         height: 800px;
+    }
+}
+
+@media (max-width: 375px) {
+    .main-burger-wrapper{
+        .main-burger-menu{
+            width: 100%;
+        }
     }
 }

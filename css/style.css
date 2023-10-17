@@ -496,6 +496,11 @@ a {
     padding: 40px 0 0 0;
   }
 }
+@media (max-width: 650px) {
+  .main-burger-wrapper .main-burger-menu {
+    width: 50%;
+  }
+}
 @media (max-width: 576px) {
   .main-background {
     height: 600px;
@@ -518,9 +523,17 @@ a {
   .main-content-left__button {
     padding: 30px 0 0 0;
   }
+  .main-burger-wrapper .main-burger-menu {
+    width: 70%;
+  }
 }
 @media (max-width: 472px) {
   .main-background {
     height: 800px;
+  }
+}
+@media (max-width: 375px) {
+  .main-burger-wrapper .main-burger-menu {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
