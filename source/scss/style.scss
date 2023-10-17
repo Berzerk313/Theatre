@@ -17,6 +17,12 @@ a {
     text-decoration: none;
 }
 
+body{
+
+}
+.lock{
+    overflow: hidden;
+}
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -34,28 +40,7 @@ a {
     width: 100%;
     height: 1045px;
     z-index: -1;
-    // clamp
 }
-.main-background-large {
-    position: absolute;
-    width: 100%;
-    height: 1045px;
-    z-index: -1;
-}
-.main-background-medium {
-    position: absolute;
-    width: 100%;
-    height: 800px;
-    z-index: -1;
-}
-.main-background-mobile {
-    position: absolute;
-    width: 100%;
-    height: 600px;
-    z-index: -1;
-}
-
-
 
 .main-left {
     width: 150px;
@@ -317,9 +302,6 @@ a {
         padding-left: 94px;
         // margin: 0 126px auto auto;
     }
-    .main-left{
-        width: 80px;
-    }
     .main-header{
         &__menu{
             max-width: 690px;
@@ -344,6 +326,12 @@ a {
     }
 }
 
+@media (max-width: 940px) {
+    .main-left{
+        width: 80px;
+    }
+}
+
 @media (max-width: 790px) {
     .main-header{
         &__menu{
@@ -353,6 +341,9 @@ a {
 }
 
 @media (max-width: 768px) {
+    .main-background{
+        height: 800px;
+    }
     .container{
         max-width: 690px; 
         padding-left: 0;  
@@ -363,6 +354,9 @@ a {
     .main-header{
         display: none;
     }
+    
+//////////////////////
+
     .main-burger-wrapper{
         position: fixed;
         display: flex;
@@ -373,8 +367,9 @@ a {
         align-items: center;
         padding: 56px 38px 0 38px;
         .main-burger{  
-            
-            display: flex;
+            position: relative;
+            cursor: pointer;
+            display:  flex;
             flex-direction: column;
             gap:5px;
             &-span-top{
@@ -393,6 +388,71 @@ a {
                 background: #fff;
             }
         }
+        .main-burger-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 39%;
+            height: 100%;
+            //transform: translate(-100%, 0px);
+            background-color: #333;
+            padding: 10px;
+            transition: left 0.3s ease 0s;
+            overflow: auto;
+            padding: 30px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            
+            &__close{
+                position: relative;
+                &-img{
+                    position: absolute;
+                    top: 0;
+                    right: 30px;
+                }
+            }
+            &__list{
+                padding: 110px 0 0 39px ;
+                &-item{
+                    a {
+                        text-decoration: none;
+                    }
+                    color: var(--white, #FFF);
+                    font-family: 'Open Sans Condensed';
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1.2px;
+                    text-transform: uppercase;
+                    
+                }
+            }
+            .main-burger-menu__list-icons {
+                display: grid;
+                grid-template-columns: repeat(2, 0fr);
+                padding: 54px 0 0 0;
+                gap: 54px 42px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+        .active{
+            left:0;
+        }
+        .remove {
+            left: -100%;
+        }
+        
+        .main-burger-menu__list > li {
+            margin: 0 0 35px 0;
+            
+        }
+        .main-burger-menu__list:last-child(){
+            // margin-bottom: 0;
+        }
+    
         .main-number{
             display: flex;
             flex-direction: column;
@@ -421,6 +481,8 @@ a {
         }
     }
  
+//////////////
+
     .main-content{
         max-width: 620px;
         &-left{
@@ -445,6 +507,9 @@ a {
 }
 
 @media (max-width: 576px) {
+    .main-background{
+        height: 600px;
+    }
     .container{
         padding: 0 33px;
     }
@@ -463,5 +528,11 @@ a {
                 padding:30px 0 0 0;
             }
         }
+    }
+}
+
+@media (max-width: 472px) {
+    .main-background{
+        height: 800px;
     }
 }

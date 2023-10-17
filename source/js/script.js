@@ -18,3 +18,21 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 console.log(333);
+
+const mainBurger = document.querySelector('.main-burger');
+if(mainBurger){
+  const mainBurgerMenu = document.querySelector('.main-burger-menu');
+  const closeBurgerMenu = document.querySelector('.main-burger-menu__close-img');
+  mainBurger.addEventListener("click", function(e) {
+    document.body.classList.toggle('lock');
+    mainBurger.classList.toggle('active');
+    mainBurgerMenu.classList.toggle('active');
+  });
+  closeBurgerMenu.addEventListener("click", function(e) {
+    mainBurgerMenu.classList.toggle('active');
+    mainBurger.classList.toggle('active');
+    mainBurgerMenu.classList.toggle('remove');
+    mainBurgerMenu.classList.toggle('remove');
+    document.body.classList.toggle('lock');
+  }); 
+}
