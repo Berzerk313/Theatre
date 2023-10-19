@@ -251,9 +251,17 @@ a {
   padding-top: 22px;
 }
 .main-content-right__swipe {
-  padding-top: 30px;
+  padding-top: 56px;
   display: flex;
   justify-content: space-between;
+}
+.main-content-right__swipe-left {
+  display: flex;
+  gap: 8px;
+}
+.main-content-right__swipe-right {
+  display: flex;
+  gap: 8px;
 }
 
 .main-swiper-navigation {

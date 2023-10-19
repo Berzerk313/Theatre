@@ -215,9 +215,17 @@ body {}
         padding-top: 22px;
 
         &__swipe {
-            padding-top: 30px;
+            padding-top: 56px;
             display: flex;
             justify-content: space-between;
+            &-left{
+                display: flex;
+                gap:8px;
+            }
+            &-right{
+                display: flex;
+                gap:8px;
+            }
         }
     }
 }
