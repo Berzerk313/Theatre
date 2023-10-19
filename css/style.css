@@ -441,6 +441,7 @@ a {
     gap: 54px 42px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
   }
   .main-burger-wrapper .active {
     left: 0;
