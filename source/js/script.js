@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 });
-console.log(333);
+// console.log(333);
 
 const mainBurger = document.querySelector('.main-burger');
 if(mainBurger){
@@ -36,3 +36,22 @@ if(mainBurger){
     document.body.classList.toggle('lock');
   }); 
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  let swiper = new Swiper(".productions-swiper", {
+    spaceBetween: 0,
+    centerSlides: 'true',
+    fade: 'true',
+    loop: true,
+    breakpoints: {
+      1920: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+      // 1919: {
+      //   slidesPerView: 3.5,
+      //   spaceBetween: 0,
+      // },
+    },
+  });
+});
