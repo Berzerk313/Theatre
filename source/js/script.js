@@ -48,10 +48,60 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 4,
         spaceBetween: 0,
       },
-      // 1919: {
-      //   slidesPerView: 3.5,
-      //   spaceBetween: 0,
-      // },
+    },
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  let swiper = new Swiper(".partners-swiper", {
+    spaceBetween: 0,
+    centerSlides: 'true',
+    fade: 'true',
+    loop: true,
+    autoplay: {
+      delay: 2500,
+    },
+    breakpoints: {
+      1920: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1450: {
+        slidesPerView: 3.8,
+        spaceBetween: 30,
+      },
+      1300: {
+        slidesPerView: 3.2,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 2.53,
+        spaceBetween: 35,
+      },
+      820: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 2.53,
+        spaceBetween: 35,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 55,
+      },
+      375: {
+        slidesPerView: 1.2,
+        spaceBetween: 65,
+      },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
     },
   });
 });

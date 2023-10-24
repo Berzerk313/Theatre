@@ -678,7 +678,7 @@ a {
     padding-top: 90px;
   }
   .teatre h2 {
-    padding-left: 12px;
+    padding-right: 3px;
   }
   .teatre-content {
     padding-top: 60px;
@@ -699,9 +699,6 @@ a {
   .teatre {
     margin-left: 0px;
     padding-top: 80px;
-  }
-  .teatre h2 {
-    padding-right: 16px;
   }
   .teatre-content {
     flex-direction: column;
@@ -829,7 +826,7 @@ a {
 }
 @media (max-width: 768px) {
   .productions h2 {
-    padding: 86px 0 0 20px;
+    padding: 86px 0 0 5px;
   }
   .productions .productions-swiper {
     padding: 0;
@@ -897,7 +894,8 @@ a {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 54px */
+  line-height: 150%;
+  /* 54px */
 }
 
 @media (max-width: 1126px) {
@@ -1045,5 +1043,81 @@ a {
   }
   .years-background .years-content-right img {
     width: 150px;
+  }
+}
+.partners {
+  padding-top: 152px;
+}
+.partners h2 {
+  padding-left: 6px;
+  color: var(--white, #FFF);
+  font-family: "Open Sans Condensed";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.partners-swiper-wrapper-top {
+  margin-top: 136px;
+  justify-content: space-between;
+  align-items: center;
+}
+.partners-swiper-wrapper-top .swiper-slide {
+  max-width: 256px;
+}
+
+.partners-swiper-wrapper-bottom {
+  margin-top: 129px;
+  justify-content: space-between;
+  align-items: center;
+}
+.partners-swiper-wrapper-bottom .swiper-slide {
+  max-width: 256px;
+}
+
+@media (max-width: 992px) {
+  .partners {
+    padding-top: 149px;
+  }
+  .partners h2 {
+    font-size: 48px;
+    letter-spacing: 4.8px;
+  }
+  .partners-swiper-wrapper-top {
+    margin-top: 130px;
+  }
+  .partners-swiper-wrapper-bottom {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .partners {
+    padding-top: 90px;
+  }
+  .partners-swiper-wrapper-top {
+    margin-top: 92px;
+  }
+  .partners-swiper-wrapper-bottom {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 730px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0 33px;
+  }
+  .partners {
+    padding-top: 80px;
   }
 }/*# sourceMappingURL=style.css.map */
