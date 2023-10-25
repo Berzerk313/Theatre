@@ -759,23 +759,17 @@ a {
 .productions .productions-swiper__wrapper {
   max-width: 1770px;
 }
-.productions .productions-swiper__wrapper .swiper-slide {
+.productions .productions-swiper__wrapper .productions-slide {
   max-width: 443px;
   position: relative;
 }
-.productions .productions-swiper__wrapper .swiper-slide__background {
+.productions .productions-swiper__wrapper .productions-slide__background {
   width: 100%;
   height: 100%;
   z-index: -1;
   opacity: 0.35;
 }
-.productions .productions-swiper__wrapper .swiper-slide__background:hover {
-  opacity: 1;
-}
-.productions .productions-swiper__wrapper .swiper-slide__background:hover .swiper-slide__name {
-  display: none;
-}
-.productions .productions-swiper__wrapper .swiper-slide__name {
+.productions .productions-swiper__wrapper .productions-slide__name {
   position: absolute;
   top: 40px;
   left: 40px;
@@ -788,7 +782,7 @@ a {
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
-.productions .productions-swiper__wrapper .swiper-slide__date {
+.productions .productions-swiper__wrapper .productions-slide__date {
   position: absolute;
   top: 390px;
   left: 40px;
@@ -803,11 +797,27 @@ a {
   writing-mode: vertical-rl;
   transform: rotate(-180deg);
 }
-.productions .productions-swiper__wrapper .swiper-slide__search {
+.productions .productions-swiper__wrapper .productions-slide__search {
   position: absolute;
   top: 225px;
   left: 171px;
   display: none;
+}
+.productions .productions-swiper__wrapper .productions-slide:hover .productions-slide__background {
+  opacity: 1;
+  transition: all 1s ease;
+}
+.productions .productions-swiper__wrapper .productions-slide:hover .productions-slide__name {
+  display: none;
+  transition: all 4s ease;
+}
+.productions .productions-swiper__wrapper .productions-slide:hover .productions-slide__date {
+  display: none;
+  transition: none 4s ease;
+}
+.productions .productions-swiper__wrapper .productions-slide:hover .productions-slide__search {
+  display: block;
+  transition: none 4s ease;
 }
 
 @media (max-width: 1919px) {
