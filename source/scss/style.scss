@@ -364,7 +364,7 @@ body {}
     }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 797px) {
     .main-header {
         &__menu {
             gap: 16px;
@@ -616,7 +616,7 @@ body {}
     }
 
     .main-content {
-        padding-top: 100px;
+        padding-top: 140px;
     }
 }
 
@@ -871,6 +871,16 @@ body {}
 @media (max-width: 472px) {
     .background-page {
         top: 799px;
+    }
+}
+
+@media (max-width: 393px) {
+    .teatre-content__second-column{
+        padding-left: 10px;
+        padding-right: 0px;
+        &-groups{
+            gap:15px;
+        }
     }
 }
 

@@ -366,7 +366,7 @@ a {
     width: 80px;
   }
 }
-@media (max-width: 790px) {
+@media (max-width: 797px) {
   .main-header__menu {
     gap: 16px;
   }
@@ -556,7 +556,7 @@ a {
     height: 800px;
   }
   .main-content {
-    padding-top: 100px;
+    padding-top: 140px;
   }
 }
 @media (max-width: 375px) {
@@ -752,6 +752,15 @@ a {
 @media (max-width: 472px) {
   .background-page {
     top: 799px;
+  }
+}
+@media (max-width: 393px) {
+  .teatre-content__second-column {
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+  .teatre-content__second-column-groups {
+    gap: 15px;
   }
 }
 .productions h2 {
