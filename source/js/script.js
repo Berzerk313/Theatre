@@ -1,3 +1,14 @@
+// var scroll = 0;
+// const mainBurgerWrapper = document.querySelector('.main-burger-wrapper');
+// $(window).scroll(function() {
+//      if ($(window).scrollTop() > scroll) {
+//       mainBurgerWrapper.classList.toggle('main-header_background');
+//      }
+//      else {
+//       mainBurgerWrapper.classList.toggle('main-header_background');
+//     }
+//     });
+
 document.addEventListener('DOMContentLoaded', function () {
   let swiper = new Swiper(".main-swiper", {
     spaceBetween: 30,
@@ -160,3 +171,4 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 });
+
