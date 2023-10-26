@@ -185,7 +185,6 @@ html {
   gap: 3px;
 }
 .main-header__number a {
-  text-decoration: none;
   color: var(--white, #FFF);
   text-align: right;
   font-family: "Open Sans Condensed";
