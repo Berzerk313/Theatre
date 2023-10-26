@@ -315,6 +315,12 @@ body {}
         max-width: 800px;
         padding-left: 80px;
     }
+    .main-header{
+        &__menu {
+            gap: 26px;
+        }
+    }
+    
 }
 
 @media (max-width: 992px) {

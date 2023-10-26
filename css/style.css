@@ -333,6 +333,9 @@ a {
     max-width: 800px;
     padding-left: 80px;
   }
+  .main-header__menu {
+    gap: 26px;
+  }
 }
 @media (max-width: 992px) {
   .container {
