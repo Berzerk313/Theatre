@@ -16,7 +16,7 @@
 
 <body>
 
-  <section>
+  <section id="main">
     <div class="main">
       <div class="main__background-wrapper">
         <picture>
@@ -54,11 +54,11 @@
             <img class="main-burger-menu__close-img" src="./img/header/close.svg" alt="close">
           </div>
           <ul class="main-burger-menu__list">
-            <li><a href="#" class="main-burger-menu__list-item">головна</a></li>
-            <li><a href="#" class="main-burger-menu__list-item">про театр</a></li>
-            <li><a href="#" class="main-burger-menu__list-item">Наші постановки</a></li>
-            <li><a href="#" class="main-burger-menu__list-item">партнери театру</a></li>
-            <li><a href="#" class="main-burger-menu__list-item">контакти</a></li>
+            <li><a href="#main" class="main-burger-menu__list-item">головна</a></li>
+            <li><a href="#teatre" class="main-burger-menu__list-item">про театр</a></li>
+            <li><a href="#productions" class="main-burger-menu__list-item">Наші постановки</a></li>
+            <li><a href="#partners" class="main-burger-menu__list-item">партнери театру</a></li>
+            <li><a href="#maecenas" class="main-burger-menu__list-item">контакти</a></li>
           </ul>
           <div class="main-burger-menu__list-icons">
             <a href="#"><img src="./img/header/facebook-burger.svg" alt="facebook"></a>
@@ -73,25 +73,35 @@
         <div class="container">
           <div class="main-header">
             <div class="main-header__menu">
-              <a href="#">
-                <h2>головна</h2>
-              </a>
-              <a href="#">
+              <div class="header_underline">
+                <a href="#main">
+                  <h2>головна</h2>
+                </a>
+              </div>
+              <div class="header_underline">
+              <a href="#teatre">
                 <h2>про театр</h2>
               </a>
-              <a href="#">
+            </div>
+            <div class="header_underline">
+              <a href="#productions">
                 <h2>Наші постановки</h2>
               </a>
-              <a href="#">
+            </div>
+            <div class="header_underline">
+              <a href="#partners">
                 <h2>партнери театру</h2>
               </a>
-              <a href="#">
+            </div>
+            <div class="header_underline">
+              <a href="#maecenas">
                 <h2>контакти</h2>
               </a>
             </div>
+            </div>
             <div class="main-header__number">
-              <a href="#">
-                <h3>+38 (095) 650-71-79</h3>
+              <a href="tel:+380956507179">
+                +38 (095) 650-71-79
               </a>
               <hr class="main-header__number-hr" color="#D1A954" />
 
@@ -100,65 +110,65 @@
         </div>
       </div>
 
-        <div class="container">
-          <div class="main-content">
-            <div class="main-content-left">
-              <h1>театр ім. Лесі Українки</h1>
-              <div class="main-content-left__info">
-                <p>У самому центрі історичної частини Києва, за два кроки від Хрещатика, неподалік від Золотих воріт, на
-                  розі
-                  двох старовинних вулиць - Пушкінської та Богдана Хмельницького – постає будівля, добре відома киянам та
-                  гостям столиці України як Театр імені Лесі Українки.</p>
-                <p>Цінність будь-якого театру, його популярність
-                  у глядача
-                  завжди визначається наявністю в ньому яскравих індивідуальностей.</p>
-                <p>Київський театр імені Лесі Українки завжди
-                  славився своїми акторськими та режисерськими індивідуальностями. Театр завжди був і залишається театром
-                  ансамблю.</p>
-                </h2>
-              </div>
-              <div class="main-content-left__button">
-                <a href="#">
-                  <button class="main-content-left__button-wrapper">
-                    <h3>афіша</h3>
-                  </button>
-                </a>
+      <div class="container">
+        <div class="main-content">
+          <div class="main-content-left">
+            <h1>театр ім. Лесі Українки</h1>
+            <div class="main-content-left__info">
+              <p>У самому центрі історичної частини Києва, за два кроки від Хрещатика, неподалік від Золотих воріт, на
+                розі
+                двох старовинних вулиць - Пушкінської та Богдана Хмельницького – постає будівля, добре відома киянам та
+                гостям столиці України як Театр імені Лесі Українки.</p>
+              <p>Цінність будь-якого театру, його популярність
+                у глядача
+                завжди визначається наявністю в ньому яскравих індивідуальностей.</p>
+              <p>Київський театр імені Лесі Українки завжди
+                славився своїми акторськими та режисерськими індивідуальностями. Театр завжди був і залишається театром
+                ансамблю.</p>
+              </h2>
+            </div>
+            <div class="main-content-left__button">
+              <a href="#">
+                <button class="main-content-left__button-wrapper">
+                  <h3>афіша</h3>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="main-content-right">
+            <div class="swiper main-swiper">
+              <div class="swiper-wrapper main-swiper__wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/main/swiper/first-slide.png" alt="first-slide">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/main/swiper/second-slide.png" alt="second-slide">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/main/swiper/third-slide.png" alt="third-slide">
+                </div>
               </div>
             </div>
-            <div class="main-content-right">
-              <div class="swiper main-swiper">
-                <div class="swiper-wrapper main-swiper__wrapper">
-                  <div class="swiper-slide">
-                    <img src="./img/main/swiper/first-slide.png" alt="first-slide">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./img/main/swiper/second-slide.png" alt="second-slide">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./img/main/swiper/third-slide.png" alt="third-slide">
-                  </div>
-                </div>
+            <div class="main-content-right__swipe">
+              <div class="main-content-right__swipe-left">
+                <img src="./img/main/swiper/left.svg" alt="left-arrow">
+                <span class="main-swiper-navigation">попередня</span>
               </div>
-              <div class="main-content-right__swipe">
-                <div class="main-content-right__swipe-left">
-                  <img src="./img/main/swiper/left.svg" alt="left-arrow">
-                  <span class="main-swiper-navigation">попередня</span>
-                </div>
-                <div class="main-content-right__swipe-right">
-                  <span class="main-swiper-navigation">наступна</span>
-                  <img src="./img/main/swiper/right.svg" alt="right-arrow">
-                </div>
+              <div class="main-content-right__swipe-right">
+                <span class="main-swiper-navigation">наступна</span>
+                <img src="./img/main/swiper/right.svg" alt="right-arrow">
               </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
   </section>
 
   <div class="backgroud-page-wrapper">
     <div class="background-page">
 
-      <section>
+      <section id="teatre">
         <div class="container">
           <div class="teatre">
             <h2><span class="teatre-color">про</span> театр</h2>
@@ -193,7 +203,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="productions">
         <div class="productions">
           <div class="container">
             <h2><span class="teatre-color">наші</span> постановки</h2>
@@ -289,7 +299,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="partners">
         <div class="partners">
           <div class="container">
             <h2><span class="teatre-color">партнери</span> театру</h2>
@@ -337,12 +347,19 @@
         </div>
       </section>
 
-      <!-- <section>
+      <!-- <section id="maecenas">
         <div class="maecenas">
           <div class="container">
             <h2><span class="teatre-color">стати</span> меценатом</h2>
             <div class="maecenas-content">
-              <h3 class="item-number-first">+38 (095) 850-72-35</h3>
+              <div class="maecenas-content__info">
+                <a href="tel:+380958507235" class="item-number-first">+38 (095) 850-72-35</a>
+              <h3 class="item-number-second">+38 (095) 650-71-79</h3>
+              <h3 class="item-email-text">info@theater.ua</h3>
+              <h3 class="item-address">м. Київ, вул.Богдана Хмельницького 5140</h3>
+              </div>
+
+               <h3 class="item-number-first">+38 (095) 850-72-35</h3>
               <h3 class="item-number-second">+38 (095) 650-71-79</h3>
               <h3 class="item-email-text">info@theater.ua</h3>
               <h3 class="item-address">м. Київ, вул.Богдана Хмельницького 5140</h3>
@@ -353,11 +370,11 @@
               <input class="item-email" type="text" placeholder="E-mail">
               <h4 class="item-text">* Ваші дані не будуть передані третім особам, 100% ймовірність. <br/> Конфіденційність ми
                 гарантуємо та захищаємо персональні дані.</h4>
-              <button class="item-button">Надіслати</button>
-            </div>
+              <button class="item-button">Надіслати</button> -->
+            <!-- </div>
           </div>
         </div>
-      </section> -->
+      </section> --> 
 
       <section>
         <div class="footer">

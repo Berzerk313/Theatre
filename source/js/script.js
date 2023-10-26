@@ -4,9 +4,9 @@
 //      if ($(window).scrollTop() > scroll) {
 //       mainBurgerWrapper.classList.toggle('main-header_background');
 //      }
-//      else {
-//       mainBurgerWrapper.classList.toggle('main-header_background');
-//     }
+//     //  else {
+//     //   mainBurgerWrapper.classList.toggle('main-header_background');
+//     // }
 //     });
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -80,6 +80,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .lock {
   overflow: hidden;
 }
@@ -182,12 +186,6 @@ a {
 }
 .main-header__number a {
   text-decoration: none;
-}
-.main-header__number-hr {
-  width: 139px;
-  height: 2px;
-}
-.main-header__number h3 {
   color: var(--white, #FFF);
   text-align: right;
   font-family: "Open Sans Condensed";
@@ -197,6 +195,15 @@ a {
   line-height: normal;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+}
+.main-header__number-hr {
+  width: 139px;
+  height: 2px;
+}
+
+.header_underline:hover {
+  width: auto;
+  border-bottom: solid #D1A954 2px;
 }
 
 .main-content {
@@ -1289,7 +1296,7 @@ a {
   grid-template-columns: repeat(4, auto);
   gap: 10px;
 }
-.maecenas-content h3 {
+.maecenas-content .item-number-first {
   color: var(--white, #FFF);
   font-family: "Open Sans Condensed";
   font-size: 16px;

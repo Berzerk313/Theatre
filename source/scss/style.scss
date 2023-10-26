@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {}
 
 .lock {
@@ -134,14 +138,6 @@ body {}
 
         a {
             text-decoration: none;
-        }
-
-        &-hr {
-            width: 139px;
-            height: 2px;
-        }
-
-        h3 {
             color: var(--white, #FFF);
             text-align: right;
             font-family: 'Open Sans Condensed';
@@ -152,8 +148,18 @@ body {}
             letter-spacing: 0.8px;
             text-transform: uppercase;
         }
+
+        &-hr {
+            width: 139px;
+            height: 2px;
+        }
     }
 }
+
+    .header_underline:hover{
+        width: auto;
+        border-bottom: solid #D1A954 2px;
+    }
 
 .main-content {
     display: flex;
@@ -1616,7 +1622,7 @@ body {}
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap:10px;
-    h3{
+    .item-number-first{
         color: var(--white, #FFF);
         font-family: 'Open Sans Condensed';
         font-size: 16px;
