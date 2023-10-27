@@ -1593,6 +1593,10 @@ html {
   line-height: 150%;
 }
 
+.footer-mobile-br {
+  display: none;
+}
+
 @media (max-width: 992px) {
   .footer {
     padding-top: 74px;
@@ -1601,5 +1605,10 @@ html {
 @media (max-width: 768px) {
   .footer {
     padding-top: 54px;
+  }
+}
+@media (max-width: 576px) {
+  .footer-mobile-br {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
