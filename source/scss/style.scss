@@ -3,7 +3,6 @@
     src: url('../fonts/OpenSansCondensed-Bold.eot');
     src: local('Alethia Next Light'), local('AlethiaNext-Light'),
         url('../fonts/OpenSansCondensed-Bold.eot') format('embedded-opentype'),
-        url('../fonts/OpenSansCondensed-Bold.woff2') format('woff2'),
         url('../fonts/OpenSansCondensed-Bold.woff') format('woff'),
         url('../fonts/OpenSansCondensed-Bold.ttf') format('truetype');
     font-weight: 400;
@@ -101,6 +100,9 @@ body {}
 
 .main-header_background {
     background: rgba(51, 51, 51, 0.75);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 .main-header {
