@@ -289,6 +289,10 @@ html {
   gap: 8px;
 }
 
+.main-content-right__swipe-left, .main-content-right__swipe-right {
+  cursor: pointer;
+}
+
 .main-swiper-navigation {
   color: var(--white, #FFF);
   font-family: "Open Sans Condensed";
@@ -298,7 +302,6 @@ html {
   line-height: normal;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  cursor: pointer;
 }
 .main-swiper .main-swiper_yellow {
   position: relative;
