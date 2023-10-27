@@ -298,6 +298,7 @@ html {
   line-height: normal;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .main-swiper .main-swiper_yellow {
   position: relative;
@@ -1611,8 +1612,13 @@ html {
     padding-top: 54px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 630px) {
   .footer-mobile-br {
     display: block;
+  }
+}
+@media (max-width: 500px) {
+  .footer-content {
+    gap: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
