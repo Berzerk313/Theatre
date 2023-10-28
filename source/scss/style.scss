@@ -160,8 +160,12 @@ body {}
     }
 }
 
+.main-header__number-scrollnone{
+    display: none;
+}
+
 .header_underline{
-    transition: none 0.5s ease;
+    transition: none 0.2s ease;
 }
 
 .header_underline:hover {
@@ -944,8 +948,9 @@ body {}
         overflow-x: hidden;
 
         &__wrapper {
+            width: 100%;
 
-            max-width: 1770px;
+            // width: 1770px;
 
             .productions-slide {
                 max-width: 443px;
@@ -1750,6 +1755,7 @@ body {}
                 padding: 8px 0 0 12px;
                 width: 310px;
                 height: 100px;
+                resize: none;
             }
             
         }

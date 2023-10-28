@@ -204,8 +204,12 @@ html {
   height: 2px;
 }
 
+.main-header__number-scrollnone {
+  display: none;
+}
+
 .header_underline {
-  transition: none 0.5s ease;
+  transition: none 0.2s ease;
 }
 
 .header_underline:hover {
@@ -816,7 +820,7 @@ html {
   overflow-x: hidden;
 }
 .productions .productions-swiper__wrapper {
-  max-width: 1770px;
+  width: 100%;
 }
 .productions .productions-swiper__wrapper .productions-slide {
   max-width: 443px;
@@ -1394,6 +1398,7 @@ html {
   padding: 8px 0 0 12px;
   width: 310px;
   height: 100px;
+  resize: none;
 }
 .maecenas-content__form-textbut {
   padding-top: 40px;

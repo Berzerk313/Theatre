@@ -1,18 +1,24 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   let scrollPos = 10;
   let header = document.querySelector('.main-header_fixed')
   let header1 = document.querySelector('.main-burger-wrapper')
+  let mainHeaderNumber = document.querySelector('.main-header__number')
 
-  if(document.body.scrollTop > scrollPos || document.documentElement.scrollTop > scrollPos) {
+
+  if (document.body.scrollTop > scrollPos || document.documentElement.scrollTop > scrollPos) {
     header.classList.add('main-header_background');
     header1.classList.add('main-header_background');
+    if (document.documentElement.clientWidth <= '1300'){
+      mainHeaderNumber.classList.add('main-header__number-scrollnone');
+    }
   }
-  else  {
+  else {
     header.classList.remove('main-header_background');
     header1.classList.remove('main-header_background');
-  }
+    mainHeaderNumber.classList.remove('main-header__number-scrollnone');
+}
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -37,21 +43,21 @@ document.addEventListener('DOMContentLoaded', function () {
 // console.log(333);
 
 const mainBurger = document.querySelector('.main-burger');
-if(mainBurger){
+if (mainBurger) {
   const mainBurgerMenu = document.querySelector('.main-burger-menu');
   const closeBurgerMenu = document.querySelector('.main-burger-menu__close-img');
-  mainBurger.addEventListener("click", function(e) {
+  mainBurger.addEventListener("click", function (e) {
     document.body.classList.toggle('lock');
     mainBurger.classList.toggle('active');
     mainBurgerMenu.classList.toggle('active');
   });
-  closeBurgerMenu.addEventListener("click", function(e) {
+  closeBurgerMenu.addEventListener("click", function (e) {
     mainBurgerMenu.classList.toggle('active');
     mainBurger.classList.toggle('active');
     mainBurgerMenu.classList.toggle('remove');
     mainBurgerMenu.classList.toggle('remove');
     document.body.classList.toggle('lock');
-  }); 
+  });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
