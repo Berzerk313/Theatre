@@ -171,7 +171,6 @@ html {
 .main-header__menu {
   display: flex;
   gap: 50px;
-  position: relative;
 }
 .main-header h2 {
   color: var(--white, #FFF);
@@ -200,23 +199,28 @@ html {
   letter-spacing: 0.8px;
   text-transform: uppercase;
 }
-.main-header__number-hr {
-  width: 139px;
+.main-header a {
+  position: relative;
+}
+.main-header a:before {
+  position: absolute;
+  content: "";
+  width: 100%;
   height: 2px;
+  background-color: #D1A954;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transition: transform 0.25s;
+  transform-origin: left;
+}
+.main-header a:hover:before {
+  transform: scaleX(1);
+  transition: transform 0.25s;
 }
 
 .main-header__number-scrollnone {
   display: none;
-}
-
-.header_underline {
-  transition: left 0.3s ease 0s;
-}
-
-.header_underline:hover {
-  width: auto;
-  border-bottom: solid #D1A954 2px;
-  transition: all 0.5s ease;
 }
 
 .main-content {
