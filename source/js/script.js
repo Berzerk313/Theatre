@@ -71,6 +71,38 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 4,
         spaceBetween: 0,
       },
+      1600: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      1440: {
+        slidesPerView: 2.5,
+        spaceBetween: 0,
+      },
+      1140: {
+        slidesPerView: 2.5,
+        spaceBetween: 0,
+      },
+      992:{
+        slidesPerView: 1.56,
+        spaceBetween: 0,
+      },
+      768:{
+        slidesPerView: 1.56,
+        spaceBetween: 0,
+      },
+      650:{
+        slidesPerView: 1.4,
+        spaceBetween: 0,
+      },
+      576:{
+        slidesPerView: 1.155,
+        spaceBetween: 0,
+      },
+      500:{
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
     },
   });
 });

@@ -171,6 +171,7 @@ html {
 .main-header__menu {
   display: flex;
   gap: 50px;
+  position: relative;
 }
 .main-header h2 {
   color: var(--white, #FFF);
@@ -209,7 +210,7 @@ html {
 }
 
 .header_underline {
-  transition: none 0.2s ease;
+  transition: left 0.3s ease 0s;
 }
 
 .header_underline:hover {
@@ -823,7 +824,8 @@ html {
   width: 100%;
 }
 .productions .productions-swiper__wrapper .productions-slide {
-  max-width: 443px;
+  width: 442px;
+  height: 550px;
   position: relative;
 }
 .productions .productions-swiper__wrapper .productions-slide__background {
@@ -930,6 +932,10 @@ html {
   }
 }
 @media (max-width: 500px) {
+  .productions .productions-swiper__wrapper .productions-slide {
+    width: auto;
+    height: auto;
+  }
   .productions .productions-swiper__wrapper .productions-slide__name {
     font-size: 16px;
     top: 40px;
