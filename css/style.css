@@ -873,6 +873,7 @@ html {
   left: 171px;
   opacity: 0;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 .productions .productions-swiper__wrapper .productions-slide:hover .productions-slide__background {
   opacity: 1;
