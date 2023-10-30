@@ -439,6 +439,25 @@ html {
     align-items: center;
     padding: 56px 38px 0 38px;
   }
+  .main-burger-wrapper a {
+    position: relative;
+  }
+  .main-burger-wrapper a:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #D1A954;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.25s;
+    transform-origin: left;
+  }
+  .main-burger-wrapper a:hover:before {
+    transform: scaleX(1);
+    transition: transform 0.25s;
+  }
   .main-burger-wrapper .main-burger {
     position: relative;
     cursor: pointer;
